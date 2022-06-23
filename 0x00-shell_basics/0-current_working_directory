@@ -1,2 +1,2 @@
 #!/bin/bash
-readlink -f link/0-current_working_directory
+temp=$( realpath "$0"  ) && dirname "$temp"
